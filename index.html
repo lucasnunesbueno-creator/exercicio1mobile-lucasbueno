@@ -4,12 +4,25 @@
 <head>
     <meta charset="UTF-8" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css"><img>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
     
     <div class="caixa_cartao_de_visita">
-         <img src="images.jfif" alt="Descrição da imagem">
+         <img src="images.jfif" alt="Descrição da imagem"/>
+<h2>LUCAS</h2>
+         <button onclick="sayHello()">BOTAO</button>
     </div> 
+
+    <!-- JavaScript -->
+    <script>
+        function sayHello() {
+            // Busca o nome dentro do H2
+            const name = document.getElementById('userName').innerText;
+            alert('Olá, ' + name + '!');
+        }
+    </script>
+
 </body>
 
 </html>
